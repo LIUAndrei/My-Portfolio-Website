@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        violetish: '#915eff',
         primary: '#050816',
         secondary: '#aaa6c3',
         tertiary: '#151030',
