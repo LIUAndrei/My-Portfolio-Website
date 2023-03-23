@@ -7,6 +7,12 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from './hoc'
 import { slideIn } from '../utils/motion'
 
+//  template_is0c0n6
+
+// service_p3wti2e
+
+// FTH7tZCau6c18c9l4
+
 const Contact = () => {
   const [loading, setLoading] = useState(false)
   const [form, setForm] = useState({
@@ -16,8 +22,48 @@ const Contact = () => {
   })
   const formRef = useRef()
 
-  const handleSubmit = (e) => {}
-  const handleChange = (e) => {}
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs
+      .send(
+        'service_p3wti2e',
+        'template_is0c0n6',
+        {
+          from_name: form.name,
+          to_name: 'Portfolio Website',
+          from_email: form.email,
+          to_email: 'box@aliubinski.us',
+          message: form.message,
+        },
+        'FTH7tZCau6c18c9l4'
+      )
+      .then(
+        () => {
+          setLoading(false)
+          alert(
+            'Thank you for your message. I will get back to you within 24 hours. Meanwhile you can write me via Telegram @alxdrvnsk'
+          )
+          setForm({
+            name: '',
+            email: '',
+            message: '',
+          })
+        },
+        (error) => {
+          setLoading(false)
+          console.log(error)
+          alert(
+            'An error occurred while sending the email. Please try again later.'
+          )
+        }
+      )
+  }
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
+  }
 
   return (
     <div className='flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row'>
