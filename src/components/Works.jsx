@@ -40,12 +40,19 @@ const ProjectCard = ({
           </div>
         </div>
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[15px]'>{description}</p>
+          <h3 className='text-white font-bold text-[24px] select-none'>
+            {name}
+          </h3>
+          <p className='mt-2 text-secondary text-[15px] select-none'>
+            {description}
+          </p>
         </div>{' '}
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
-            <p key={`tag-${tag}`} className={`${tag.color} text-[14px]`}>
+            <p
+              key={`tag-${tag}`}
+              className={`${tag.color} text-[14px] select-none`}
+            >
               #{tag.name}
             </p>
           ))}
