@@ -13,6 +13,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  project_link,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.8, 1)}>
@@ -20,12 +21,12 @@ const ProjectCard = ({
         options={{ max: 45, scale: 1, speed: 450 }}
         className='bg-tertiary p-5 rounded-3xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px] cursor-pointer'>
           <img
             src={image}
             alt={name}
             className='w-full h-full rounded-2xl object-cover'
-          />{' '}
+          />
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, '_blank')}
@@ -35,7 +36,7 @@ const ProjectCard = ({
                 src={github}
                 alt='github'
                 className='w-2/3 h-2/3 object-contain'
-              />{' '}
+              />
             </div>
           </div>
         </div>
@@ -50,7 +51,7 @@ const ProjectCard = ({
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
-              key={`tag-${tag}`}
+              key={`tag-${tag.name}`}
               className={`${tag.color} text-[14px] select-none`}
             >
               #{tag.name}

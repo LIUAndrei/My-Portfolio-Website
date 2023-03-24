@@ -21,10 +21,14 @@ import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.png'
 
-import meta from './company/meta.png'
-import shopify from './company/shopify.png'
-import starbucks from './company/starbucks.png'
-import tesla from './company/tesla.png'
+import svelte from './tech/svelte.png'
+import sass from './tech/sass.png'
+import bash from './tech/bash.png'
+import chatgpt from './tech/chatgpt.png'
+
+import capitalcom from './company/capitalcom.jpg'
+import os1845 from './company/1845.png'
+import stevensTr from './company/stevensTr.png'
 
 import carrent from './carrent.png'
 import jobit from './jobit.png'
@@ -52,10 +56,13 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  svelte,
+  sass,
+  bash,
+  chatgpt,
+  capitalcom,
+  os1845,
+  stevensTr,
   carrent,
   jobit,
   tripguide,

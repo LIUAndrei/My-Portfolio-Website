@@ -15,10 +15,13 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  svelte,
+  sass,
+  bash,
+  chatgpt,
+  capitalcom,
+  os1845,
+  stevensTr,
   carrent,
   jobit,
   tripguide,
@@ -42,19 +45,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'React Developer',
     icon: web,
   },
   {
-    title: 'React Native Developer',
-    icon: mobile,
-  },
-  {
-    title: 'Backend Developer',
+    title: 'Svelte Developer',
     icon: backend,
   },
   {
-    title: 'Content Creator',
+    title: 'NodeJS Developer',
+    icon: mobile,
+  },
+  {
+    title: 'AI & Data Enthusiast',
     icon: creator,
   },
 ]
@@ -72,30 +75,30 @@ const technologies = [
     name: 'JavaScript',
     icon: javascript,
   },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
+  // {
+  //   name: 'TypeScript',
+  //   icon: typescript,
+  // },
   {
     name: 'React JS',
     icon: reactjs,
   },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
+  // {
+  //   name: 'Redux Toolkit',
+  //   icon: redux,
+  // },
   {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
+  // {
+  //   name: 'Node JS',
+  //   icon: nodejs,
+  // },
+  // {
+  //   name: 'MongoDB',
+  //   icon: mongodb,
+  // },
   {
     name: 'Three JS',
     icon: threejs,
@@ -108,19 +111,36 @@ const technologies = [
     name: 'figma',
     icon: figma,
   },
+  // {
+  //   name: 'docker',
+  //   icon: docker,
+  // },
   {
-    name: 'docker',
-    icon: docker,
+    name: 'svelte',
+    icon: svelte,
+  },
+  {
+    name: 'sass',
+    icon: sass,
+  },
+
+  {
+    name: 'bash',
+    icon: bash,
+  },
+  {
+    name: 'chatgpt',
+    icon: chatgpt,
   },
 ]
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    title: 'Frontend Development Trainee',
+    company_name: 'Capital.com',
+    icon: capitalcom,
+    iconBg: '#fff',
+    date: 'July 2022 - August 2022',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -131,8 +151,8 @@ const experiences = [
   {
     title: 'React Native Developer',
     company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
+    icon: capitalcom,
+    iconBg: '#fff',
     date: 'Jan 2021 - Feb 2022',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
@@ -144,7 +164,7 @@ const experiences = [
   {
     title: 'Web Developer',
     company_name: 'Shopify',
-    icon: shopify,
+    icon: capitalcom,
     iconBg: '#383E56',
     date: 'Jan 2022 - Jan 2023',
     points: [
@@ -157,7 +177,7 @@ const experiences = [
   {
     title: 'Full stack Developer',
     company_name: 'Meta',
-    icon: meta,
+    icon: capitalcom,
     iconBg: '#E6DEDD',
     date: 'Jan 2023 - Present',
     points: [
@@ -198,7 +218,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Bankist',
     description:
       'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
     tags: [
@@ -217,9 +237,10 @@ const projects = [
     ],
     image: carrent,
     source_code_link: 'https://github.com/',
+    project_link: '',
   },
   {
-    name: 'Job IT',
+    name: 'Mapty',
     description:
       'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
     tags: [
@@ -238,9 +259,10 @@ const projects = [
     ],
     image: jobit,
     source_code_link: 'https://github.com/',
+    project_link: '',
   },
   {
-    name: 'Trip Guide',
+    name: 'Forkify',
     description:
       'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
@@ -259,7 +281,12 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: 'https://github.com/',
+    project_link: '',
   },
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+const texts = {
+  about: `I'm a full-stack developer and I'm happy to see you on my portfolio website. Constantly on the loo`,
+}
+
+export { services, technologies, experiences, testimonials, projects, texts }
