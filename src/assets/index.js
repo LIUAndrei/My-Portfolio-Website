@@ -27,7 +27,7 @@ import bash from './tech/bash.png'
 import chatgpt from './tech/chatgpt.png'
 
 import capitalcom from './company/capitalcom.jpg'
-import os1845 from './company/1845.png'
+import os1845 from './company/1845.jpg'
 import stevensTr from './company/stevensTr.png'
 
 import carrent from './carrent.png'

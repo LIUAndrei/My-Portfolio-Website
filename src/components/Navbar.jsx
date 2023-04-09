@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
+import { AiOutlineDownload } from 'react-icons/ai'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -23,7 +24,7 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Andrei Liubinski &nbsp;
-            <span className='sm:block hidden'>| Full-Stack Development</span>
+            <span className='sm:block hidden'>| Web Developer</span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -33,9 +34,17 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[16px] font-medium cursor-pointer`}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a
+                href={
+                  (link.id && `#${link.id}`) ||
+                  (link.download &&
+                    `https://aliubinski.us/resume/PDFs/Andrei%20Liubinski%20Resume%20Current.pdf`)
+                }
+              >
+                {link.title}
+              </a>
             </li>
           ))}
         </ul>
