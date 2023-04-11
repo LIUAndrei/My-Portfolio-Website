@@ -30,9 +30,9 @@ import capitalcom from './company/capitalcom.jpg'
 import os1845 from './company/1845.jpg'
 import stevensTr from './company/stevensTr.png'
 
-import carrent from './carrent.png'
-import jobit from './jobit.png'
-import tripguide from './tripguide.png'
+import bankist from './bankist.png'
+import forkify from './forkify.png'
+import mapty from './mapty.png'
 
 export {
   logo,
@@ -63,7 +63,7 @@ export {
   capitalcom,
   os1845,
   stevensTr,
-  carrent,
-  jobit,
-  tripguide,
+  bankist,
+  forkify,
+  mapty,
 }

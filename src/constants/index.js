@@ -22,10 +22,10 @@ import {
   capitalcom,
   os1845,
   stevensTr,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  bankist,
+  forkify,
+  mapty,
 } from '../assets'
 
 export const navLinks = [
@@ -255,15 +255,14 @@ const testimonials = [
 const projects = [
   {
     name: 'Bankist',
-    description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    description: `Client-side banking application that a bank might use for it's clients. Log in, transfer money from account to account, request loans, close accounts. Clients have locale specific currency.`,
     tags: [
       {
-        name: 'react',
+        name: 'HTML/CSS',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'JavaScript',
         color: 'green-text-gradient',
       },
       {
@@ -271,53 +270,51 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
-    project_link: '',
+    image: bankist,
+    source_code_link: 'https://github.com/LIUAndrei/Bankist',
+    project_link: 'https://aliubinski.us/Projects/Bankist/',
   },
   {
     name: 'Mapty',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    description: `A map app that allows you to track your running and cycling workouts. Users' location determines map position. Add a workout by clicking on the map. Workouts are saved to the local storage.`,
     tags: [
       {
-        name: 'react',
+        name: 'HTML/CSS',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'JavaScript',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'LeafletJS',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-    project_link: '',
+    image: mapty,
+    source_code_link: 'https://github.com/LIUAndrei/Mapty',
+    project_link: `https://aliubinski.us/Projects/Mapty/`,
   },
   {
     name: 'Forkify',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    description: `Recipe app that uses 3rd party API. Use the search bar to find recipes, use page buttons to find the recipe you interested in and click on it to show the recipe, change serving size, or add your own recipe.`,
     tags: [
       {
-        name: 'nextjs',
+        name: 'HTML/CSS',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'JavaScript',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: '3rd party API',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
-    project_link: '',
+    image: forkify,
+    source_code_link: 'https://github.com/LIUAndrei/Forkify',
+    project_link: 'https://aliubinski.us/Projects/Forkify/',
   },
 ]
 

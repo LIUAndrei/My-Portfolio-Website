@@ -27,7 +27,10 @@ const ProjectCard = ({
             alt={name}
             className='w-full h-full rounded-2xl object-cover'
           />
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div
+            onClick={() => window.open(project_link, '_blank')}
+            className='absolute inset-0 flex justify-end m-3 card-img_hover'
+          >
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className='black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -75,14 +78,10 @@ const Works = () => {
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
           variants={fadeIn('', '', 0.2, 1)}
         >
-          Following projects showcase my skills Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Fuga eum id incidunt, cum cumque aliquid
-          voluptatum harum possimus quisquam ullam maiores, obcaecati, quos ipsa
-          natus explicabo error reprehenderit dolores officiis! Cum accusantium
-          cumque, deleniti unde veniam temporibus modi voluptates id doloribus
-          optio qui, odit totam necessitatibus dolor provident laboriosam quod
-          eum velit, aspernatur dolores ad perferendis assumenda. Unde, dicta
-          blanditiis?
+          Over the course of my studies I'm trying to take on challenging
+          projects to cement my newly acquired skills. You can find the
+          completed projects below. Please tap the screenshot to try the project
+          out or the GitHub logo to see the code on GitHub.
         </motion.p>
       </div>
       <div className='mt-20 flex flex-wrap gap-7'>
