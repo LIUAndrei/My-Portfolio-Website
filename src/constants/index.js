@@ -228,11 +228,11 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+      'I had the pleasure of working with Andrei for nearly a year at Capital.com, where he was a valuable member of our team. Throughout his time with us, Andrei consistently demonstrated a ',
+    name: 'Edgar Archim',
+    designation: 'Head of CS&R',
+    company: 'Coretechs',
+    image: './src/assets/EdgarArchim.jpg',
   },
   {
     testimonial:
