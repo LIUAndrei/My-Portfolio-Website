@@ -232,7 +232,8 @@ const testimonials = [
     name: 'Edgar Archim',
     designation: 'Head of CS&R',
     company: 'Coretechs',
-    image: './src/assets/EdgarArchim.jpg',
+    image:
+      'https://media.licdn.com/dms/image/D4E35AQHXu0GaefG5Bg/profile-framedphoto-shrink_200_200/0/1680687145462?e=1681822800&v=beta&t=G5gT9SegIlWkTqBZvL8z_KdwJfROB43eIKCsIvyWm7k',
   },
   {
     testimonial:
