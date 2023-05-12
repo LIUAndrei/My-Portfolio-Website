@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
-import { navLinks } from '../constants'
+import { navLinks, resume } from '../constants'
 import { logo, menu, close } from '../assets'
 import { AiOutlineDownload } from 'react-icons/ai'
 
@@ -40,7 +40,7 @@ const Navbar = () => {
                 href={
                   (link.id && `#${link.id}`) ||
                   (link.download &&
-                    `https://aliubinski.us/resume/PDFs/Andrei%20Liubinski%20Resume%20Current.pdf`)
+                    `https://aliubinski.us/resume/PDFs/${resume.file}`)
                 }
               >
                 {link.title}

@@ -34,7 +34,12 @@ import bankist from './bankist.png'
 import forkify from './forkify.png'
 import mapty from './mapty.png'
 
+import ebgorb from './ebgorb.jpg'
+import sivhel from './sivhel.jpg'
+
 export {
+  sivhel,
+  ebgorb,
   logo,
   backend,
   creator,

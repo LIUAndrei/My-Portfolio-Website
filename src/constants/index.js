@@ -1,4 +1,6 @@
 import {
+  sivhel,
+  ebgorb,
   mobile,
   backend,
   creator,
@@ -207,7 +209,7 @@ const experiences = [
     company_name: 'Stevens Tanker Division, USA',
     icon: stevensTr,
     iconBg: '#FFF',
-    date: 'October 2018 - November 2019',
+    date: 'October 2017 - October 2018',
   },
   {
     points: [
@@ -221,7 +223,7 @@ const experiences = [
     company_name: 'Stevens Transport, USA',
     icon: stevensTr,
     iconBg: '#FFF',
-    date: `september 2013 - october 2018`,
+    date: `September 2013 - October 2018`,
   },
 ]
 
@@ -232,16 +234,15 @@ const testimonials = [
     name: 'Edgar Archim',
     designation: 'Head of CS&R',
     company: 'Coretechs',
-    image:
-      'https://media.licdn.com/dms/image/D4E35AQHXu0GaefG5Bg/profile-framedphoto-shrink_200_200/0/1680687145462?e=1681822800&v=beta&t=G5gT9SegIlWkTqBZvL8z_KdwJfROB43eIKCsIvyWm7k',
+    image: ebgorb,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
+      'I had a great pleasure of working alongside Andrei as well as mentoring him in customer support. Andrei has consistently demonstrated his sharp mind, ',
+    name: 'Helen Sivitskaya',
+    designation: 'CS Performance Analyst',
+    company: 'Capital.com',
+    image: sivhel,
   },
   {
     testimonial:
@@ -326,4 +327,16 @@ const texts = {
   ],
 }
 
-export { services, technologies, experiences, testimonials, projects, texts }
+const resume = {
+  file: `Andrei-Liubinski-Resume.pdf`,
+}
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  texts,
+  resume,
+}
