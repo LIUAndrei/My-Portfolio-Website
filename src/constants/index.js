@@ -25,6 +25,7 @@ import {
   os1845,
   stevensTr,
   threejs,
+  youflix,
   bankist,
   forkify,
   mapty,
@@ -255,6 +256,27 @@ const testimonials = [
 ]
 
 const projects = [
+  {
+    name: 'Youflix',
+    description: `A clone of Youtube that is utilizing Youtube API provided by Rapid API. Search, browse and watch videos. Use navigation panel on the left to use preset popular tags.`,
+    tags: [
+      {
+        name: 'ReactJS 18+',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'React Router',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Material UI',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: youflix,
+    source_code_link: 'https://github.com/LIUAndrei/Youtube-clone',
+    project_link: 'https://aliubinski.us/Projects/Youflix/',
+  },
   {
     name: 'Bankist',
     description: `Client-side banking application that a bank might use for it's clients. Log in, transfer money from account to account, request loans, close accounts. Clients have locale specific currency.`,

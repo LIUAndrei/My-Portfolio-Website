@@ -30,6 +30,7 @@ import capitalcom from './company/capitalcom.jpg'
 import os1845 from './company/1845.jpg'
 import stevensTr from './company/stevensTr.png'
 
+import youflix from './youflix.png'
 import bankist from './bankist.png'
 import forkify from './forkify.png'
 import mapty from './mapty.png'
@@ -68,6 +69,7 @@ export {
   capitalcom,
   os1845,
   stevensTr,
+  youflix,
   bankist,
   forkify,
   mapty,
